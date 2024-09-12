@@ -4,10 +4,9 @@ Welcome to the repository of the Open Commissioning Unity Package. It is part of
 This document provides detailed instructions on how to install, 
 set up, and utilize the various components and features of the package within Unity.
 
-## Table Of Content
+**Table Of Content**
 
 - [Open Commissioning Unity Package Guide](#open-commissioning-unity-package-guide)
-    * [Table Of Content](#table-of-content)
     * [Installation](#installation)
         + [Dependencies](#dependencies)
         + [Installation Methods](#installation-methods)
@@ -62,7 +61,10 @@ set up, and utilize the various components and features of the package within Un
         + [Client](#client)
     * [Defining the Device Hierarchy](#defining-the-device-hierarchy)
         + [Example Project Hierarchy:](#example-project-hierarchy)
-
+- [Contributing](#contributing)
+    * [Submitting Pull Requests](#submitting-pull-requests)
+    * [Code Style Convention](#code-style-convention)
+    * [Guidelines for Contributions](#guidelines-for-contributions)
 
 
 ## Installation
@@ -1002,3 +1004,51 @@ the hierarchical structure:
 In this example, groups based on the   [`Hierarchy`](#defining-the-device-hierarchy)
  components in the project tree are created in the configuration file that contain 
 the devices located within the child objects of these groups.
+
+
+# Contributing
+
+We welcome contributions from everyone and appreciate your effort to improve this project. 
+We have some basic rules and guidelines that make the contributing process easier for everyone involved.
+
+## Submitting Pull Requests
+
+1. For non-trivial changes, please open an issue first to discuss your proposed changes.
+2. Fork the repo and create your feature branch.
+3. Follow the code style conventions and guidelines throughout working on your contribution.
+4. Create a pull request with a clear title and description.
+
+After your pull request is reviewed and merged. 
+
+**Note**: All contributions will be licensed under the project's license.
+
+## Code Style Convention
+
+Please follow these naming conventions in your code:
+
+| Type           | Rule             |
+|----------------|------------------|
+| Private field  | _lowerCamelCase  |
+| Public field   | UpperCamelCase   |
+| Protected field | UpperCamelCase   |
+| Internal field | UpperCamelCase   |
+| Property       | UpperCamelCase   |
+| Method         | UpperCamelCase   |
+| Class          | UpperCamelCase   |
+| Interface      | IUpperCamelCase  |
+| Local variable | lowerCamelCase   |
+| Parameter      | lowerCamelCase   |
+| Constant       | UPPER_SNAKE_CASE |
+
+## Guidelines for Contributions
+
+- **Keep changes focused:** Submit one pull request per bug fix or feature. This makes it easier to review and merge your contributions.
+- **Discuss major changes:** For large or complex changes, please open an issue to discuss with maintainers before starting work.
+- **Commit message format**: Use the [semantic-release](https://semantic-release.gitbook.io/semantic-release#commit-message-format) commit message format.
+- **Write clear code:** Prioritize readability and maintainability.
+- **Be consistent:** Follow existing coding styles and patterns in the project.
+- **Include tests:** It is recommended to add or update tests to cover your changes.
+- **Update examples:** If you think its helpful, include your new feature in the samples of the package.
+- **Document your work:** Update relevant documentation, including code comments and user guides.
+
+We appreciate your contributions and look forward to collaborating with you to improve this project!
