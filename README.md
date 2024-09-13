@@ -84,7 +84,7 @@ There are three ways to install the package to a Unity project:
 
 1. Install via git URL by adding this entry in the project's manifest.json:
    ```json
-   "com.open-commissioning.core": "Link to repo"
+   "com.open-commissioning.core": "https://github.com/OpenCommissioning/OC_Unity_Core.git#upm"
    ```
 
 2. Clone the repository, check out the upm branch and add the package using the Unity package manager.
@@ -168,7 +168,7 @@ The Cylinder can be referenced in an [`Axis`](#axis) component as its _Actor_.
 - Control: Enables manual control of the component when the "Override" Button is toggled
 - Progress: Visualizes the current position of the `Cylinder` in relation to the minimum and maximum values
 - Value: The current value of the `Cylinder` which gets sent to referencing axes
-- Limits: Sets the minimal _(Y)_ and maximal _(X)_ values of the `Cylinder`. Unit: _[m]_
+- Limits: Sets the minimal _(X)_ and maximal _(Y)_ values of the `Cylinder`. Unit: _[m]_
 - Type: Specify the type of `Cylinder` (double-acting, single-acting positive, single-acting negative)
 - Time to Min/Max: Time in seconds to reach the minimal/maximal value when extended/retracted
 - Profile: The movement profile of the `Cylinder` (default is linear)
@@ -848,7 +848,7 @@ Each _<Entry>_ element has two attributes, _Type_ and _Key_, representing the ty
 The values of the entries are the default values with which every tag file is initialized.
 The exception is the entry with the key _MDS_UniqueId_, whose value will be the _Unique ID_ property of the [`Payload`](#payload)
  component.
-The tag file itself is a `.mds` file, containing an array of bytes, which is not readable by a text editor.
+The tag file itself is a `.data` file, containing an array of bytes, which is not readable by a text editor.
 To read the tag file of a [`Payload Tag`](#payload-tag) component the auxiliary function in the Menu _Open Commissioning > Product Data > Data Viewer_ can be used:
 
 ![ProductDataViewer.png](images/ProductDataViewer.png)
@@ -1020,7 +1020,8 @@ We have some basic rules and guidelines that make the contributing process easie
 
 After your pull request is reviewed and merged. 
 
-**Note**: All contributions will be licensed under the project's license.
+> [!NOTE]  
+> All contributions will be licensed under the project's license
 
 ## Code Style Convention
 
